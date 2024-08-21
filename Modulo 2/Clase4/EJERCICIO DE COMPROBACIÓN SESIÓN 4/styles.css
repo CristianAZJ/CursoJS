@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+/* Estilos para cada color de caja */
+.rosado { background: pink; }
+.verde { background-color: green; }
+.azul { background-color: blue; }
+.rojo { background-color: red; }
+.morado { background-color: purple; }
+.gris { background-color: gray; }
+
+/* Pantalla de menos de 500px */
+@media (max-width: 500px) {
+    body {
+        display: block;
+    }
+    .rosado, .verde, .azul, .gris {
+        display: block;
+        width: 100%; 
+    }
+    .rojo, .morado {
+        display: none; 
+    }
+}
+
+/* Pantalla entre 501px y 750px */
+@media (min-width: 501px) and (max-width: 750px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .rosado {
+        width: 100%;
+    }
+    .verde, .azul, .rojo {
+        width: calc(33.33% - 20px); 
+    }
+    .morado, .gris {
+        width: calc(50% - 20px); 
+    }
+    .morado, .gris {
+        display: block;
+    }
+}
+
+/* Pantalla sobre 751px */
+@media (min-width: 751px) {
+    .rosado {
+        width: 100%; 
+    }
+    .verde {
+        width: 100%; 
+    }
+    .azul {
+        width: 100%; 
+    }
+    .rojo, .morado, .gris {
+        width: calc(33.33% - 20px); 
+    }
+}

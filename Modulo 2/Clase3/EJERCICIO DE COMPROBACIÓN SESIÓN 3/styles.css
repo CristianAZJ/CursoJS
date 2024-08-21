@@ -1,0 +1,79 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: 66.67%; /* Un tercio */
+}
+
+table {
+    border: 1px solid gray;
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid white;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.blanco {
+    background-color: white;
+}
+
+.verde {
+    background-color: green;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.cafe {
+    background-color: brown;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.violeta {
+    background-color: violet;
+}
+
+.rosado {
+    background-color: pink;
+}
+
+.naranjo {
+    background-color: orange;
+}
+
+.purpura {
+    background-color: purple;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.turquesa {
+    background-color: turquoise;
+}
+
+.negro {
+    background-color: black;
+    color: white;
+}

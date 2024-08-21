@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.5/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Cristian Zúñiga - Desarrollador .NET y Apasionado por la Tecnología</h1>
+        <p>Desarrollador .NET</p>
+    </header>
+
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/mi-foto.jpg" class="img-fluid rounded-circle" alt="Mi Foto">
+            </div>
+            <div class="col-md-8">
+                <h2>Sobre mí</h2>
+                <p>Soy un desarrollador especializado en tecnologías .NET con una sólida experiencia en desarrollo
+                    backend. Mi pasión por la programación se centra en crear soluciones eficientes y escalables que
+                    resuelvan problemas complejos de manera efectiva. A lo largo de mi carrera, he trabajado en diversos
+                    proyectos, desde aplicaciones empresariales hasta servicios web robustos, siempre con un enfoque en
+                    la calidad del código y la optimización del rendimiento.
+                    Además de mi trabajo como desarrollador, me apasiona la aventura y la exploración. En mi tiempo
+                    libre, disfruto de realizar rutas en moto, lo que me permite descubrir nuevos paisajes y culturas.
+                    Viajar me inspira a enfrentar desafíos tanto en la carretera como en el mundo del desarrollo de
+                    software, donde cada proyecto es una nueva oportunidad para aprender y crecer.
+                    Me considero una persona comprometida y siempre en busca de nuevas experiencias, tanto en el ámbito
+                    profesional como personal. Creo firmemente en que las habilidades técnicas deben ir de la mano con
+                    la creatividad y la curiosidad por el mundo que nos rodea.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Habilidades</h2>
+            <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Proyectos</h2>
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/proyecto1.jpg" class="d-block w-100" alt="Módulo Contratados">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Módulo Contratados</h5>
+                            <p>Aplicación desarrollada en .NET que facilita el cálculo de remuneraciones para
+                                trabajadores portuarios, manejando la complejidad de las reglas de negocio específicas
+                                del rubro.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/proyecto2.jpg" class="d-block w-100" alt="SOF">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>SOF</h5>
+                            <p>Aplicación desarrollada en .NET que estandariza y automatiza la emisión de certificados
+                                para las navieras, optimizando procesos críticos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/proyecto3.jpg" class="d-block w-100" alt="Desarrollo de APIs">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Desarrollo de APIs</h5>
+                            <p>APIs desarrolladas en .NET utilizando OWIN y JWT para ofrecer servicios específicos de la
+                                empresa a clientes, simplificando la integración y el funcionamiento entre aplicaciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contacto</h2>
+            <form id="contactForm" action="mailto:cristian_zuniga_j@hotmail.com.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" name="Mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-primary text-white">
+        <p>© 2024 Cristian Zúñiga Jadell. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+
+
+</body>
+
+</html>

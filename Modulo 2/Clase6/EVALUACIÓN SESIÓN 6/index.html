@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>AeroVia Express</title>
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AeroVia Express</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ofertas y destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mis viajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Centro de ayuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estado de vuelo</a>
+            </li>
+          </ul>
+          <button class="btn btn-login" type="button">Iniciar sesión</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Promocional -->
+    <section class="promo-section container d-flex align-items-center my-4">
+      <div class="promo-text p-3">
+        <h1>¡Vacaciones de verano!</h1>
+        <p>Vuela por Chile y Sudamérica con hasta 40% de descuento. Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express.</p>
+        <a href="#" class="text-primary">Compra aquí</a>
+      </div>
+      <img src="./assets/polynesia.jpg" alt="Promoción" class="img-fluid mt-3 promo-image">
+    </section>
+
+    <!-- Formulario -->
+    <div class="container form-container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Vuelos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Paquetes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hoteles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Autos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Seguros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Upgrade</a>
+        </li>
+      </ul>
+      <form class="mt-3">
+        <div class="d-flex align-items-center mb-3">
+          <div class="dropdown me-3">
+            <span class="dropdown-toggle custom-dropdown" id="tipo-viaje" data-bs-toggle="dropdown" aria-expanded="false">
+              Ida y Vuelta
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="tipo-viaje">
+              <li><a class="dropdown-item" href="#">Ida y Vuelta</a></li>
+              <li><a class="dropdown-item" href="#">Solo Ida</a></li>
+            </ul>
+          </div>
+          <div class="dropdown me-3">
+            <span class="dropdown-toggle custom-dropdown" id="clase" data-bs-toggle="dropdown" aria-expanded="false">
+              Economy
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="clase">
+              <li><a class="dropdown-item" href="#">Economy</a></li>
+              <li><a class="dropdown-item" href="#">Business</a></li>
+              <li><a class="dropdown-item" href="#">First Class</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <span class="dropdown-toggle custom-dropdown" id="pasajeros" data-bs-toggle="dropdown" aria-expanded="false">
+              1 pasajero
+            </span>
+            <ul class="dropdown-menu" aria-labelledby="pasajeros">
+              <li><a class="dropdown-item" href="#">1 pasajero</a></li>
+              <li><a class="dropdown-item" href="#">2 pasajeros</a></li>
+              <li><a class="dropdown-item" href="#">3 pasajeros</a></li>
+              <li><a class="dropdown-item" href="#">4 pasajeros</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row g-3 align-items-end">
+          <div class="col-auto">
+            <input type="text" class="form-control" id="origen" placeholder="Origen" required>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" id="destino" placeholder="Destino" required>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" id="fecha-idaTexto" value = "Fecha Ida" disabled>
+          </div>
+          <div class="col-auto">
+            <input type="date" class="form-control" id="fecha-ida" required>
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" id="fecha-vueltaTexto" value = "Fecha Vuelta" disabled>
+          </div>
+          <div class="col-auto">
+            <input type="date" class="form-control" id="fecha-vuelta" disabled>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-danger">Buscar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto de Hoy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1>Bienvenido a mi página web</h1>
+    </section>
+
+    <section id="acerca">
+        <h2>Acerca de</h2>
+        <p>Esta es una página de ejemplo creada para practicar HTML, CSS y JavaScript.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div class="imagenes">
+        <img src="./img/img1.jpg" alt="Imagen 1">
+        <img src="./img/img2.jpg" alt="Imagen 2">
+        <img src="./img/img3.jpg" alt="Imagen 3">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

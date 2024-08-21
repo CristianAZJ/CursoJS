@@ -1,0 +1,70 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #051B54;
+}
+
+.navbar-brand {
+  font-family: 'Gill Sans', sans-serif;
+  color: white !important;
+}
+
+.navbar-nav .nav-link, .btn-login {
+  color: white !important;
+}
+
+.btn-login {
+  background-color: #FFFFFF33;
+}
+
+.promo-section {
+  background-color: #62DAD3;
+  color: #051B54;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.promo-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.promo-image {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.form-container {
+  color: #051B54;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.form-container .nav-tabs .nav-link.active {
+  background-color: #ffffff;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.custom-dropdown {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.dropdown-menu {
+  min-width: auto;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}

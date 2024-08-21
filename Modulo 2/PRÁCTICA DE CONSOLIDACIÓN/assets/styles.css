@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 50px 0;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+footer {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.carousel-caption h5, 
+.carousel-caption p {
+    color: #ffffff; 
+}
+.carousel-item img {
+    width: 100%; 
+    margin: 0 auto; 
+    max-height: 400px; 
+    object-fit: contain; 
+}
